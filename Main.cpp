@@ -9,9 +9,9 @@ void select_menu_item(int input);
 void print_main_menu();
 void go_back_to_main_menu();
 bool is_integer(std::string num);
-void binary_converter();
-void hexa_converter();
-void truth_table_identifier();
+void Spring();
+void Pendulum();
+void Collision();
 
 int main() {
     main_menu();
@@ -53,13 +53,13 @@ int get_user_input() {
 void select_menu_item(int input) {
     switch (input) {
         case 1:
-            binary_converter();
+            Spring();
             break;
         case 2:
-            hexa_converter();
+            Pendulum();
             break;
         case 3:
-            truth_table_identifier();
+            Collision();
             break;
         case 4:
             exit(0);
@@ -92,30 +92,14 @@ bool is_integer(std::string num) {
     return std::regex_match(num, std::regex("[+-]?[0-9]+"));
 }
 
-void binary_converter() {
-    int number;
-    std::cout << "\nEnter an integer to convert to binary: ";
-    std::cin >> number;
-    std::cout << "\nBinary representation of " << number << " is " << std::bitset<8>(number) << "\n";
+void Spring() {
     go_back_to_main_menu();
 }
 
-void hexa_converter() {
-    int number;
-    std::cout << "\nEnter an integer to convert to hexadecimal: ";
-    std::cin >> number;
-    std::cout << std::hex << "\nHexadecimal representation of " << number << " is " << number << "\n";
-    std::cout << std::dec; // Reset to decimal output
+void Pendulum() {
     go_back_to_main_menu();
 }
 
-void truth_table_identifier() {
-    std::cout << "\nTruth Table for AND, OR, and NOT operations:\n";
-    std::cout << "A B | A AND B | A OR B | NOT A\n";
-    for (int a = 0; a < 2; ++a) {
-        for (int b = 0; b < 2; ++b) {
-            std::cout << a << " " << b << "   |    " << (a && b) << "    |   " << (a || b) << "   |   " << !a << "\n";
-        }
-    }
+void Collision() {
     go_back_to_main_menu();
 }
