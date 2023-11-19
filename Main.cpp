@@ -1,6 +1,5 @@
 #include <iostream>
 #include <regex>
-#include <bitset>
 #include <iomanip>
 
 void main_menu();
