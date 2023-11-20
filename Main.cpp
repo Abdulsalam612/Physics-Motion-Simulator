@@ -57,7 +57,7 @@ void select_menu_item(int input) {
             Pendulum();
             break;
         case 3:
-            Collision();
+            Colision();
             break;
         case 4:
             exit(0);
