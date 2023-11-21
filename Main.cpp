@@ -70,10 +70,10 @@ void select_menu_item(int input) {
 
 void print_main_menu() {
     std::cout << "\n----------- Main menu -----------\n";
-    std::cout << "|\t1. Spring\t|\n";
-    std::cout << "|\t2. Pendulum\t|\n";
-    std::cout << "|\t3. Collision\t|\n";
-    std::cout << "|\t4. Exit\t\t\t|\n";
+    std::cout << "|\t1. Spring\t\t\t\t\t|\n";
+    std::cout << "|\t2. Pendulum\t\t\t\t\t|\n";
+    std::cout << "|\t3. Collision\t\t\t\t|\n";
+    std::cout << "|\t4. Exit\t\t\t\t\t\t|\n";
     std::cout << "---------------------------------\n";
 }
 
